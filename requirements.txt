@@ -1,5 +1,6 @@
-streamlit>=1.40
-pandas
-altair
-requests
 
+streamlit>=1.35,<2.0
+pandas>=2.0,<4.0
+plotly>=5.20,<7.0
+openpyxl>=3.1,<4.0
+tabulate>=0.9,<1.0
