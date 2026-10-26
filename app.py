@@ -9,6 +9,121 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+# ---------- CUSTOM PROFESSIONAL UI THEME ----------
+import streamlit as st
+
+st.markdown("""
+<style>
+/* Main application background */
+.stApp {
+    background: #f5f7fc;
+    color: #172b4d;
+}
+
+/* Main content spacing */
+.block-container {
+    padding-top: 1.6rem;
+    padding-bottom: 2rem;
+    max-width: 1500px;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #102544 0%, #173b67 100%);
+}
+
+[data-testid="stSidebar"] * {
+    color: #ffffff;
+}
+
+/* Main headings */
+h1, h2, h3 {
+    color: #16345c;
+    letter-spacing: -0.4px;
+}
+
+/* Metric cards */
+[data-testid="stMetric"] {
+    background: #ffffff;
+    border: 1px solid #e1e8f5;
+    border-radius: 14px;
+    padding: 18px 20px;
+    box-shadow: 0 3px 12px rgba(28, 55, 100, 0.05);
+}
+
+[data-testid="stMetricLabel"] {
+    color: #60738f;
+    font-weight: 600;
+}
+
+[data-testid="stMetricValue"] {
+    color: #1769e0;
+    font-weight: 750;
+}
+
+/* Buttons */
+.stButton > button,
+.stDownloadButton > button {
+    border-radius: 9px;
+    border: 1px solid #2468df;
+    background: #2468df;
+    color: white;
+    font-weight: 600;
+    min-height: 42px;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    background: #174fae;
+    border-color: #174fae;
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* Form fields */
+.stTextInput input,
+.stTextArea textarea,
+.stSelectbox div[data-baseweb="select"] {
+    border-radius: 8px;
+}
+
+/* Containers and expanders */
+[data-testid="stExpander"] {
+    background: #ffffff;
+    border: 1px solid #e1e8f5;
+    border-radius: 12px;
+}
+
+/* Tables */
+[data-testid="stDataFrame"] {
+    border: 1px solid #e1e8f5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Dividers */
+hr {
+    border-color: #e1e8f5;
+}
+
+/* Success, warning and information messages */
+[data-testid="stAlert"] {
+    border-radius: 10px;
+}
+
+/* Hide Streamlit's default decoration */
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+</style>
+""", unsafe_allow_html=True)
+# ---------- END CUSTOM THEME ----------
+
 
 # ============================================================
 # EU MDR / IVDR TECHNICAL DOCUMENTATION GAP ANALYZER
